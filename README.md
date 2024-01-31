@@ -1,2 +1,3 @@
-# django-job-board-web-application
-Answers in Genesis - Test Project
+# Answers in Genesis - Test Project
+
+Title: Django Job Board Web Application

@@ -21,6 +21,14 @@ body {
     cursor: pointer;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+a > div > p {
+    color: black;
+}
+
 .row-item-1 {
     width: 10rem;
     overflow: hidden;

@@ -17,3 +17,6 @@ def HomePage(request):
     ]
 
     return render(request, "index.html", { "jobListings": jobListings })
+
+def JobListing(request):
+        return render(request, "jobListing.html", { "": "" })

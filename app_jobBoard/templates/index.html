@@ -1,21 +1,23 @@
-{% extends "base.html" %} {% block title %}Job Board{% endblock %}
+{% extends "base.html" %}
 
 {% block content %}
 
     <h3>Job Board</h3>
 
+    <a href="{% url 'Add Job Form' %}" class="btn-add-job">
+        <button>Add</button>
+    </a>
+
     <ul class="job-listings">
         {% for job in jobListings %}
             <li>
-                <a href="{% url 'Job Listing' %}">
+                <a href="{% url 'Job Listing' job.id %}">
                     <div class="job-listing">
-
                         <p class="row-item-1">{{ job.title }}</p>
                         <p class="row-item-2">{{ job.companyName }}</p>
                         <p class="row-item-4">{{ job.location }}</p>
                         <p class="row-item-5">{{ job.applicationDeadline }}</p>
                         <p class="row-item-3">{{ job.description }}</p>
-
                     </div>
                 </a>
             </li>

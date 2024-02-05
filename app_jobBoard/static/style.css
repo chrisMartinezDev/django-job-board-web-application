@@ -2,7 +2,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: .5rem;
+    padding: .5rem 3rem;
+}
+
+/* index.html */
+
+.btn-add-job {
+    align-self: flex-end;
+}
+
+.btn-add-job > button {
+    border: none;
+    border-radius: .5rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
 }
 
 .job-listings {
@@ -10,6 +23,7 @@ body {
     margin-top: .5rem !important;
     border-top: solid .05rem gray;
     padding: 0rem;
+    width: 100%;
 }
 
 .job-listing {
@@ -34,7 +48,7 @@ a > div > p {
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
-    margin: 0px;
+    margin: 0rem;
     margin-right: 1rem;
 }
 
@@ -43,7 +57,7 @@ a > div > p {
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
-    margin: 0px;
+    margin: 0rem;
     margin-right: 1rem;
 }
 
@@ -52,7 +66,7 @@ a > div > p {
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
-    margin: 0px;
+    margin: 0rem;
     margin-right: 1rem;
 }
 
@@ -61,7 +75,7 @@ a > div > p {
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
-    margin: 0px;
+    margin: 0rem;
     margin-right: 1rem;
 }
 
@@ -70,6 +84,37 @@ a > div > p {
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
-    margin: 0px;
+    margin: 0rem;
     margin-right: 1rem;
+}
+
+
+/* jobListing.html */
+
+.job-listing-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.test-job > p {
+    /* display: flex;
+    justify-content: center; */
+    color: red;
+}
+
+.test-text {
+    color: red !important;
+    text-align: center;
+}
+
+/* addJobForm.html */
+
+.add-job-form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: red !important;
 }

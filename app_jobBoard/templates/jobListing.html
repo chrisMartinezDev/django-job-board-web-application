@@ -1,1 +1,16 @@
-<p> Job Listing </p>
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="test-job">
+        <p class="test-text"> Job Details </p>
+    </div>
+
+    <div class="job-listing-details">
+        <p> {{ jobID }} </p>
+        <p> {{ job.location }} </p>
+        <p> {{ job.description }} </p>
+        <p> {{ job.applicationDeadline }} </p>
+    </div>
+
+{% endblock %}

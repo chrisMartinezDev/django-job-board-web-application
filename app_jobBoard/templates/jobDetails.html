@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="job-listing-details">
+        <h3>{{ job.title }}</h3>
+    
+        <p class="job-details-company-name"> {{ job.companyName }} </p>
+        <p class="job-details-location"> {{ job.location }} </p>
+        <p class="job-details-application-deadline"> Application Deadline: {{ job.applicationDeadline }} </p>        
+        <p class="job-details-description"> {{ job.description }} </p>
+    </div>
+
+{% endblock %}

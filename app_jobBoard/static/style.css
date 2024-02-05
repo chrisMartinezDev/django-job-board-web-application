@@ -1,8 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: .5rem 3rem;
+    padding: 1rem 3rem;
 }
 
 /* index.html */
@@ -13,9 +12,10 @@ body {
 
 .btn-add-job > button {
     border: none;
-    border-radius: .5rem;
+    border-radius: .2rem;
     background-color: rgb(219, 219, 219);
     padding: .2rem 1rem;
+    width: 5rem;
 }
 
 .job-listings {
@@ -30,17 +30,39 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: .5rem 0rem;
     border-bottom: solid .05rem gray;
-    cursor: pointer;
 }
 
-a {
-    text-decoration: none !important;
+.btn-controls-container {
+    display: flex;
+    flex-direction: row;
 }
 
-a > div > p {
-    color: black;
+.btn-view-job > button {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem .3rem;
+    margin-right: .6rem;
+    width: 4rem;
+}
+
+.btn-edit-job > button {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem .3rem;
+    width: 4rem;
+}
+
+.row-edit-icon {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    width: 5rem;
 }
 
 .row-item-1 {
@@ -88,15 +110,37 @@ a > div > p {
     margin-right: 1rem;
 }
 
+/* jobDetails.html */
 
-/* jobListing.html */
+.job-listing-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
 
+.job-details-company-name {
+    margin: 0rem;
+}
 
+.job-details-location {
+    margin: 0rem;
+}
 
-/* addJob.html */
+.job-details-application-deadline {
+    margin: 0rem;
+}
 
-.add-job-form {
-    width: 50%;
+.job-details-description {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: solid .05rem gray;
+}
+
+/* addEditJob.html */
+
+.add-job-form-container {
+    align-self: center;
+    width: 40%;
 }
 
 .add-job-form-inputs {
@@ -113,6 +157,10 @@ a > div > p {
     margin-bottom: 1rem;
 }
 
+.job-input-application-deadline {
+    width: 35%;
+}
+
 .job-description {
     height: 10rem;
     min-height: 10rem;
@@ -124,10 +172,34 @@ a > div > p {
     justify-content: flex-end;
 }
 
-.btn-submit-job {
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btn-delete-job {
     border: none;
-    border-radius: .5rem;
+    border-radius: .2rem;
     background-color: rgb(219, 219, 219);
     padding: .2rem 1rem;
-    width: fit-content;
+    margin-right: .5rem;
+    width: 5rem;
+}
+
+.btn-submit-job {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    margin-right: .5rem;
+    width: 5rem;
+}
+
+.btn-cancel-job {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    width: 5rem;
 }

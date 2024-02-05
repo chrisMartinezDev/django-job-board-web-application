@@ -11,15 +11,22 @@
     <ul class="job-listings">
         {% for job in jobListings %}
             <li>
-                <a href="{% url 'Job Details' job.id %}">
-                    <div class="job-listing">
-                        <p class="row-item-1">{{ job.title }}</p>
-                        <p class="row-item-2">{{ job.companyName }}</p>
-                        <p class="row-item-4">{{ job.location }}</p>
-                        <p class="row-item-5">{{ job.applicationDeadline }}</p>
-                        <p class="row-item-3">{{ job.description }}</p>
+                <div class="job-listing">
+                    <div class="btn-controls-container">
+                        <a href="{% url 'Job Details' job.id %}"  class="btn-view-job">
+                            <button>View</button>
+                        </a>
+                        <a href="{% url 'Edit Job' job.id %}" class="btn-edit-job">
+                            <button>Edit</button>
+                        </a>
                     </div>
-                </a>
+
+                    <p class="row-item-1">{{ job.title }}</p>
+                    <p class="row-item-2">{{ job.companyName }}</p>
+                    <p class="row-item-3">{{ job.location }}</p>
+                    <p class="row-item-4">{{ job.applicationDeadline }}</p>
+                    <p class="row-item-5">{{ job.description }}</p>
+                </div>
             </li>
         {% endfor %}
     </ul>

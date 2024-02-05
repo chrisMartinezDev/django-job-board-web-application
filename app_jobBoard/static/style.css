@@ -97,24 +97,41 @@ a > div > p {
     align-items: center;
 }
 
-.test-job > p {
-    /* display: flex;
-    justify-content: center; */
-    color: red;
-}
-
-.test-text {
-    color: red !important;
-    text-align: center;
-}
-
 /* addJobForm.html */
+
+.add-job-form {
+    width: 50%;
+}
 
 .add-job-form-inputs {
     display: flex;
     flex-direction: column;
 }
 
-label {
-    color: red !important;
+.add-job-form-inputs > label {
+    margin-bottom: .2rem;
+}
+
+.add-job-form-inputs > input,
+.add-job-form-inputs > textarea {
+    margin-bottom: 1rem;
+}
+
+.job-description {
+    height: 10rem;
+    min-height: 10rem;
+    max-height: 25rem;
+}
+
+.btn-submit-job-container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-submit-job {
+    border: none;
+    border-radius: .5rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    width: fit-content;
 }

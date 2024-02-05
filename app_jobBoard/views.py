@@ -23,6 +23,8 @@ def AddJobForm(request):
     return render(request, "addJobForm.html")
 
 def AddJob(request):
+    
+
     return redirect("index.html")
 
 def Job(request, jobID):

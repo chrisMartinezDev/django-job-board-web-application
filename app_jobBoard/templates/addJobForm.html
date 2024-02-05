@@ -4,7 +4,7 @@
 
     <h3>Add Job</h3>
 
-    <form>
+    <form class="add-job-form">
         <div class="add-job-form-inputs">
             <label for="title">Title</label>
             <input type="text" name="title"/>
@@ -19,7 +19,13 @@
             <input type="date" name="application deadline"/>
 
             <label for="description">Description</label>
-            <textarea name="description"></textarea>
+            <textarea name="description" class="job-description"></textarea>
+
+            <div class="btn-submit-job-container">
+                <a href="{% url 'Add Job' %}">
+                    <input type="submit" value="Add" class="btn-submit-job"/>
+                </a>
+            </div>
         </div>
     </form>
 

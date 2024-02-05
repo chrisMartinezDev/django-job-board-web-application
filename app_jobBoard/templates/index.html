@@ -4,14 +4,14 @@
 
     <h3>Job Board</h3>
 
-    <a href="{% url 'Add Job Form' %}" class="btn-add-job">
+    <a href="{% url 'Add Job' %}" class="btn-add-job">
         <button>Add</button>
     </a>
 
     <ul class="job-listings">
         {% for job in jobListings %}
             <li>
-                <a href="{% url 'Job Listing' job.id %}">
+                <a href="{% url 'Job Details' job.id %}">
                     <div class="job-listing">
                         <p class="row-item-1">{{ job.title }}</p>
                         <p class="row-item-2">{{ job.companyName }}</p>

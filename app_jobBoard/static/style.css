@@ -91,13 +91,9 @@ a > div > p {
 
 /* jobListing.html */
 
-.job-listing-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
-/* addJobForm.html */
+
+/* addJob.html */
 
 .add-job-form {
     width: 50%;

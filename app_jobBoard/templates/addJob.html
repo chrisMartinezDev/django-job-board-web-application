@@ -4,7 +4,9 @@
 
     <h3>Add Job</h3>
 
-    <form class="add-job-form">
+    <form action="{% url 'Add Job' %}" method="post" id="addJobForm" class="add-job-form">
+        {% csrf_token %}
+
         <div class="add-job-form-inputs">
             <label for="title">Title</label>
             <input type="text" name="title"/>
@@ -22,9 +24,7 @@
             <textarea name="description" class="job-description"></textarea>
 
             <div class="btn-submit-job-container">
-                <a href="{% url 'Add Job' %}">
-                    <input type="submit" value="Add" class="btn-submit-job"/>
-                </a>
+                <input type="submit" value="Add" form="addJobForm" class="btn-submit-job"/>
             </div>
         </div>
     </form>

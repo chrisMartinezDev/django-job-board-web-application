@@ -3,7 +3,6 @@ from . import views
 
 urlpatterns = [
     path("", views.HomePage, name="Home Page"),
-    path("job_listing/<str:jobID>/", views.Job, name="Job Listing"),
-    path("add_job_form/", views.AddJobForm, name="Add Job Form"),
-    path("add_job/", views.AddJob, name="Add Job"),
+    path("job_listing/<str:jobID>/", views.JobDetails, name="Job Details"),
+    path("add_job/", views.AddJob.as_view(), name="Add Job"),
 ]

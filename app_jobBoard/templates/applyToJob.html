@@ -8,7 +8,9 @@
         <form action="{% url 'Apply to Job' job.id %}" method="post" id="applyToJobForm" enctype="multipart/form-data">
             {% csrf_token %}
     
-            {{ applicationForm }}
+            <div class="application-form-container">
+                {{ applicationForm }}
+            </div>
     
             <div class="btn-container">
                 <input type="submit" value="Submit" form="applyToJobForm" class="btn-submit-application"/>

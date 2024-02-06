@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views import View
 from .models import Job
-from .forms import JobForm
+from .forms import JobForm, ApplicationForm
 
 # Create your views here.
 
@@ -58,3 +58,26 @@ def DeleteJob(request, jobID):
     job.delete()
 
     return redirect("Home Page")
+
+class ApplyToJob(View):
+    def get(self, request, jobID):
+        job = Job.objects.get(id = jobID)
+        applicationForm = ApplicationForm()
+        context = {}
+        context["job"] = job
+        context["applicationForm"] = applicationForm
+
+        return render(request, "applyToJob.html", context)
+    
+    def post(self, request, jobID):
+        job = Job.objects.get(id = jobID)
+        applicationForm = ApplicationForm(request.POST, request.FILES)
+        context = {}
+        context["job"] = job
+
+        if applicationForm.is_valid():
+            form = applicationForm.save(commit = False)
+            form.job = job
+            form.save()
+
+        return render(request, 'jobDetails.html', context)

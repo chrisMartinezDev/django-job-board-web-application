@@ -1,6 +1,6 @@
 from django import forms
 from django.forms import ModelForm
-from .models import Job
+from .models import Job, Application
 
 # Create your forms here.
 
@@ -14,3 +14,15 @@ class JobForm(ModelForm):
     class Meta:
         model = Job
         fields = ["title", "companyName", "location", "applicationDeadline", "description"]
+
+class ApplicationForm(ModelForm):
+    firstName = forms.CharField(label="First Name")
+    lastName = forms.CharField(label="Last Name")
+    emailAddress = forms.CharField(label="Email Address")
+    phoneNumber = forms.CharField(label="Phone Number")
+    resume = forms.FileField(label="Resume")
+
+    class Meta:
+        model = Application
+        fields = ["firstName", "lastName", "emailAddress", "phoneNumber", "resume"]
+

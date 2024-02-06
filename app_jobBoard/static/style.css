@@ -39,7 +39,7 @@ body {
 }
 
 .job-header-1 {
-    width: 10rem;
+    width: 15rem;
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
@@ -49,7 +49,7 @@ body {
 }
 
 .job-header-2 {
-    width: 10rem;
+    width: 15rem;
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
@@ -67,7 +67,7 @@ body {
 }
 
 .job-header-4 {
-    width: 10rem;
+    width: 9rem;
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
@@ -123,7 +123,7 @@ body {
 }
 
 .row-item-1 {
-    width: 10rem;
+    width: 15rem;
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
@@ -132,7 +132,7 @@ body {
 }
 
 .row-item-2 {
-    width: 10rem;
+    width: 15rem;
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
@@ -150,7 +150,7 @@ body {
 }
 
 .row-item-4 {
-    width: 10rem;
+    width: 9rem;
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;

@@ -25,10 +25,67 @@ body {
     width: 5rem;
 }
 
+.job-headers {
+    display: flex;
+    flex-direction: row;
+    padding: .4rem 0rem;
+    margin-top: .5rem !important;
+    background-color: gray;
+}
+
+.job-headers > p {
+    font-weight: bold;
+    color: white;
+}
+
+.job-header-1 {
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    margin: 0rem;
+    margin-left: 9.6rem;
+    margin-right: 1rem;
+}
+
+.job-header-2 {
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    margin: 0rem;
+    margin-right: 1rem;
+}
+
+.job-header-3 {
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    margin: 0rem;
+    margin-right: 1rem;
+}
+
+.job-header-4 {
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    margin: 0rem;
+    margin-right: 1rem;
+}
+
+.job-header-5 {
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    margin: 0rem;
+    margin-right: 1rem;
+}
+
 .job-listings {
     list-style-type: none;
-    margin-top: .5rem !important;
-    border-top: solid .05rem gray;
     padding: 0rem;
     width: 100%;
 }
@@ -36,7 +93,6 @@ body {
 .job-listing {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding: .5rem 0rem;
     border-bottom: solid .05rem gray;
@@ -62,6 +118,7 @@ body {
     background-color: rgb(219, 219, 219);
     padding: .2rem .3rem;
     width: 4rem;
+    margin-right: 1rem;
 }
 
 .row-edit-icon {

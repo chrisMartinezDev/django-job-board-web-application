@@ -30,7 +30,7 @@ body {
     flex-direction: row;
     padding: .4rem 0rem;
     margin-top: .5rem !important;
-    background-color: gray;
+    background-color: rgb(101, 101, 101);
 }
 
 .job-headers > p {
@@ -76,7 +76,7 @@ body {
 }
 
 .job-header-5 {
-    width: 10rem;
+    width: 50rem;
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
@@ -96,6 +96,7 @@ body {
     align-items: center;
     padding: .5rem 0rem;
     border-bottom: solid .05rem gray;
+    overflow: hidden;
 }
 
 .btn-controls-container {
@@ -119,14 +120,6 @@ body {
     padding: .2rem .3rem;
     width: 4rem;
     margin-right: 1rem;
-}
-
-.row-edit-icon {
-    border: none;
-    border-radius: .2rem;
-    background-color: rgb(219, 219, 219);
-    padding: .2rem 1rem;
-    width: 5rem;
 }
 
 .row-item-1 {
@@ -166,7 +159,7 @@ body {
 }
 
 .row-item-5 {
-    width: 10rem;
+    width: 50rem;
     overflow: hidden;
     text-overflow: ellipsis;
     text-wrap: nowrap;
@@ -248,18 +241,29 @@ body {
     width: 40%;
 }
 
-.add-job-form-inputs {
+.job-form-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 38rem;
 }
 
-.add-job-form-inputs > label {
-    margin-bottom: .2rem;
+.job-form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: .2rem;
 }
 
-.add-job-form-inputs > input,
-.add-job-form-inputs > textarea {
-    margin-bottom: 1rem;
+.job-form-input-textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 20rem;
+    resize: none;
+    margin-top: .2rem;
 }
 
 .job-input-application-deadline {
@@ -276,6 +280,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-top: 1rem;
 }
 
 .btn-delete-job {
@@ -308,7 +313,22 @@ body {
 
 .add-application-form-container {
     align-self: center;
-    width: 40%;
+    width: 27%;
+}
+
+.application-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20.5rem;
+}
+
+.application-form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: .2rem;
 }
 
 .btn-submit-application {

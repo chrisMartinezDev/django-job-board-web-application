@@ -11,14 +11,17 @@ def HomePage(request):
     return render(request, "index.html", { "jobListings": jobListings })
 
 def JobDetails(request, jobID):
+    job = Job.objects.get(id = jobID)
+    
     context = {}
-    context["job"] = Job.objects.get(id = jobID)
+    context["job"] = job
 
     return render(request, "jobDetails.html", context)
 
 class AddJob(View):
     def get(self, request):
         jobForm = JobForm()
+
         context = {}
         context["jobForm"] = jobForm
         context["mode"] = "add"
@@ -37,9 +40,10 @@ class EditJob(View):
     def get(self, request, jobID):
         job = Job.objects.get(id = jobID)
         jobForm = JobForm(instance = job)
+
         context = {}
-        context["jobForm"] = jobForm
         context["job"] = job
+        context["jobForm"] = jobForm
         context["mode"] = "edit"
 
         return render(request, "addEditJob.html", context)
@@ -63,6 +67,7 @@ class ApplyToJob(View):
     def get(self, request, jobID):
         job = Job.objects.get(id = jobID)
         applicationForm = ApplicationForm()
+
         context = {}
         context["job"] = job
         context["applicationForm"] = applicationForm
@@ -80,6 +85,5 @@ class ApplyToJob(View):
 
         context = {}
         context["job"] = job
-        context["applicationForm"] = applicationForm
 
         return render(request, 'jobDetails.html', context)

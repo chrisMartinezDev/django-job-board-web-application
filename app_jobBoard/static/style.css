@@ -1,0 +1,264 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem 2rem 3rem;
+    height: 100%;
+    min-height: 100%;
+}
+
+/* index.html */
+
+.btn-add-job {
+    align-self: flex-end;
+}
+
+.btn-add-job > button {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    width: 5rem;
+}
+
+.job-listings {
+    list-style-type: none;
+    margin-top: .5rem !important;
+    border-top: solid .05rem gray;
+    padding: 0rem;
+    width: 100%;
+}
+
+.job-listing {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 0rem;
+    border-bottom: solid .05rem gray;
+}
+
+.btn-controls-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-view-job > button {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem .3rem;
+    margin-right: .6rem;
+    width: 4rem;
+}
+
+.btn-edit-job > button {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem .3rem;
+    width: 4rem;
+}
+
+.row-edit-icon {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    width: 5rem;
+}
+
+.row-item-1 {
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    margin: 0rem;
+    margin-right: 1rem;
+}
+
+.row-item-2 {
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    margin: 0rem;
+    margin-right: 1rem;
+}
+
+.row-item-3 {
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    margin: 0rem;
+    margin-right: 1rem;
+}
+
+.row-item-4 {
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    margin: 0rem;
+    margin-right: 1rem;
+}
+
+.row-item-5 {
+    width: 10rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    margin: 0rem;
+    margin-right: 1rem;
+}
+
+/* jobDetails.html */
+
+.job-listing-details-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    min-height: 100%;
+}
+
+.job-listing-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.btn-back-to-home-page {
+    text-decoration: none !important;
+}
+
+.btn-back-to-home-page > p {
+    cursor: pointer;
+    color: black;
+}
+
+.job-details-top-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.job-details-company-name {
+    margin: 0rem;
+}
+
+.job-details-location {
+    margin: 0rem;
+}
+
+.job-details-application-deadline {
+    margin: 0rem;
+}
+
+.job-details-description-container {
+    height: 50%;
+}
+
+.job-details-description {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: solid .05rem gray;
+}
+
+.btn-apply-to-job {
+    justify-self: flex-end;
+    align-self: center;
+}
+
+.btn-apply-to-job > button {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    margin-right: .5rem;
+    width: 5rem;
+}
+
+/* addEditJob.html */
+
+.add-job-form-container {
+    align-self: center;
+    width: 40%;
+}
+
+.add-job-form-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-job-form-inputs > label {
+    margin-bottom: .2rem;
+}
+
+.add-job-form-inputs > input,
+.add-job-form-inputs > textarea {
+    margin-bottom: 1rem;
+}
+
+.job-input-application-deadline {
+    width: 35%;
+}
+
+.job-description {
+    height: 10rem;
+    min-height: 10rem;
+    max-height: 25rem;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btn-delete-job {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    margin-right: .5rem;
+    width: 5rem;
+}
+
+.btn-submit-job {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    margin-right: .5rem;
+    width: 5rem;
+}
+
+.btn-cancel-job {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    width: 5rem;
+}
+
+/* applyToJobs.html */
+
+.add-application-form-container {
+    align-self: center;
+    width: 40%;
+}
+
+.btn-submit-application {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    margin-right: .5rem;
+    width: 5rem;
+}

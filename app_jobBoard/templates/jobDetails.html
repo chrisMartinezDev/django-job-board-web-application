@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="job-listing-details-container">
+        <div class="job-listing-details">
+            <a href="{% url 'Home Page' %}" class="btn-back-to-home-page">
+                <p>< Job Listings</p>
+            </a>
+
+            <div class="job-details-top-container">
+                <h3>{{ job.title }}</h3>
+
+                <a href="{% url 'Apply to Job' job.id %}" class="btn-apply-to-job">
+                    <button>Apply</button>
+                </a>
+            </div>
+
+            <p class="job-details-company-name"> {{ job.companyName }} </p>
+            <p class="job-details-location"> {{ job.location }} </p>
+            <p class="job-details-application-deadline"> Application Deadline: {{ job.applicationDeadline }} </p>
+            
+            <div class="job-details-description-container">
+                <p class="job-details-description"> {{ job.description }} </p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

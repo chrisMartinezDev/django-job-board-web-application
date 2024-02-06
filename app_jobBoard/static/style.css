@@ -133,6 +133,15 @@ body {
     width: 100%;
 }
 
+.btn-back-to-home-page {
+    text-decoration: none !important;
+}
+
+.btn-back-to-home-page > p {
+    cursor: pointer;
+    color: black;
+}
+
 .job-details-top-container {
     display: flex;
     flex-direction: row;
@@ -206,11 +215,6 @@ body {
     max-height: 25rem;
 }
 
-.btn-submit-job-container {
-    display: flex;
-    justify-content: flex-end;
-}
-
 .btn-container {
     display: flex;
     flex-direction: row;
@@ -248,4 +252,13 @@ body {
 .add-application-form-container {
     align-self: center;
     width: 40%;
+}
+
+.btn-submit-application {
+    border: none;
+    border-radius: .2rem;
+    background-color: rgb(219, 219, 219);
+    padding: .2rem 1rem;
+    margin-right: .5rem;
+    width: 5rem;
 }

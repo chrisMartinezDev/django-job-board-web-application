@@ -72,12 +72,14 @@ class ApplyToJob(View):
     def post(self, request, jobID):
         job = Job.objects.get(id = jobID)
         applicationForm = ApplicationForm(request.POST, request.FILES)
-        context = {}
-        context["job"] = job
 
         if applicationForm.is_valid():
             form = applicationForm.save(commit = False)
             form.job = job
             form.save()
+
+        context = {}
+        context["job"] = job
+        context["applicationForm"] = applicationForm
 
         return render(request, 'jobDetails.html', context)

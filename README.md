@@ -17,7 +17,7 @@ Sqlite3 (optional)
 
 ### Instructions
 
-1. Clone the public GitHub repository
+1. Clone the public GitHub repository to your local environment
 2. Checkout the origin/develop branch
 3. Open a terminal in VS Code - if you are not using VS Code as your IDE, open a terminal in the directory where the repository is located
 4. Run the following commands in your terminal

@@ -25,7 +25,7 @@ Sqlite3 (optional)
 - python manage.py makemigrations
 - python manage.py migrate
 - python manage.py runserver
-5. Ctr + click the localhost URL that is generated in the terminal
+5. Ctrl + click the localhost URL that is generated in the terminal
 6. (Optional) Log in to the admin dashboard to view the model objects being saved to the database
 - Add "admin/" to the end of the localhost URL
 - See Admin credentials below
